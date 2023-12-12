@@ -71,7 +71,7 @@ return require('packer').startup(function(use)
     config = function() require("nvim-ts-autotag").setup() end
   }
 
-  -- use 'lukas-reineke/indent-blankline.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   use 'nvim-tree/nvim-web-devicons'
 end)
