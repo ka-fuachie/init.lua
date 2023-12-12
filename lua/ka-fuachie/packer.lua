@@ -53,8 +53,6 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-
   use("zbirenbaum/copilot.lua")
 
   use('ThePrimeagen/vim-be-good')
@@ -73,5 +71,7 @@ return require('packer').startup(function(use)
     config = function() require("nvim-ts-autotag").setup() end
   }
 
-  use 'lukas-reineke/indent-blankline.nvim'
+  -- use 'lukas-reineke/indent-blankline.nvim'
+
+  use 'nvim-tree/nvim-web-devicons'
 end)
